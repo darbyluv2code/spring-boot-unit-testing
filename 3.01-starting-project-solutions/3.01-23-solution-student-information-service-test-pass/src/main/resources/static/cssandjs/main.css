@@ -1,0 +1,54 @@
+.students {
+  font-family: Arial;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.students td, .students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.students tr:nth-child(even){background-color: #f2f2f2;}
+
+.students tr:hover {background-color: #ddd;}
+
+.students th {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: left;
+  background-color: #0e76a8;
+  color: white;
+}
+
+body {
+  background: #fafafa;
+  color: #33333a;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #323232;
+}
+
+.main-color {
+  background-color: #0e76a8 ;
+}
+
+.pointer {
+cursor: pointer;
+}
+
+.btn-color {
+  background-color: #0e76a8 ;
+  color: white;
+}
+
+.hide {
+display: none;
+}
+
+.form {
+margin: 10px;
+}
