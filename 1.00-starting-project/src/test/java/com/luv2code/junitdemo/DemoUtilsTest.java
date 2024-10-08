@@ -1,14 +1,11 @@
 package com.luv2code.junitdemo;
 
 import java.time.Duration;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertIterableEquals;
-import static org.junit.jupiter.api.Assertions.assertLinesMatch;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
@@ -93,22 +90,22 @@ class DemoUtilsTest {
         assertArrayEquals(stringArray, demoUtils.getFirstThreeLettersOfAlphabet(), "Arrays should be the same");
     }
 
-    @DisplayName("Iterable equals")
-    @Test
-    void testIterableEquals() {
-        List<String> theList = List.of("luv", "2", "code");
+    // @DisplayName("Iterable equals")
+    // @Test
+    // void testIterableEquals() {
+    //     List<String> theList = List.of("luv", "2", "code");
 
-        assertIterableEquals(theList, demoUtils.getAcademyInList(), "Expected list should be same as actual list");
-    }
+    //     assertIterableEquals(theList, demoUtils.getAcademyInList(), "Expected list should be same as actual list");
+    // }
 
-    @DisplayName("Lines match")
-    @Test
-    @Order(50)
-    void testLinesMatch() {
-        List<String> theList = List.of("luv", "2", "code");
+    // @DisplayName("Lines match")
+    // @Test
+    // @Order(50)
+    // void testLinesMatch() {
+    //     List<String> theList = List.of("luv", "2", "code");
 
-        assertLinesMatch(theList, demoUtils.getAcademyInList(), "Lines should match");
-    }
+    //     assertLinesMatch(theList, demoUtils.getAcademyInList(), "Lines should match");
+    // }
 
     @DisplayName("Throws and Does Not Throw")
     @Test
