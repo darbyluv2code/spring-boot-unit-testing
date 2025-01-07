@@ -30,8 +30,6 @@ public class GradebookController {
         return "index";
     }
 
-
-
     @GetMapping("/studentInformation/{id}")
     public String studentInformation(@PathVariable int id, Model m) {
         return "studentInformation";

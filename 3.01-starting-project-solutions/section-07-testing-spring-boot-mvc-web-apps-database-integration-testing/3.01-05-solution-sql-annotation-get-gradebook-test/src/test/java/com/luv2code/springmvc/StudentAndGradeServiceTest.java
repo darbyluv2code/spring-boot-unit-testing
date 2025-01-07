@@ -36,6 +36,7 @@ public class StudentAndGradeServiceTest {
         jdbc.execute("insert into student(firstname, lastname, email_address) " +
                 "values ('Eric', 'Roby', 'eric.roby@luv2code_school.com')");
     }
+    
     @Test
     public void createStudentService() {
 

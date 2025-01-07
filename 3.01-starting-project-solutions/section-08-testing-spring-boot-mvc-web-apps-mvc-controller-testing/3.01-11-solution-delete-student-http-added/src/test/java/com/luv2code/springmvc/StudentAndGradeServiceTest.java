@@ -33,9 +33,10 @@ public class StudentAndGradeServiceTest {
 
     @BeforeEach
     public void setupDatabase() {
-        CollegeStudent student = new CollegeStudent("Eric", "Roby", "eric.roby@luv2code_school.com");
-        studentDao.save(student);
+        jdbc.execute("insert into student(firstname, lastname, email_address) " +
+                "values ('Eric', 'Roby', 'eric.roby@luv2code_school.com')");
     }
+
     @Test
     public void createStudentService() {
 
