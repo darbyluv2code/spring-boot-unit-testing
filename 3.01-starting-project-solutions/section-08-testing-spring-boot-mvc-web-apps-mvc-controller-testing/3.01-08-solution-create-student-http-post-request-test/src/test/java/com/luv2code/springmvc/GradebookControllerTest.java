@@ -60,9 +60,9 @@ public class GradebookControllerTest {
     }
 
     @BeforeEach
-    public void beforeEach() {
-        jdbc.execute("insert into student(id, firstname, lastname, email_address) " +
-                "values (1, 'Eric', 'Roby', 'eric.roby@luv2code_school.com')");
+    public void setupDatabase() {
+        jdbc.execute("insert into student(firstname, lastname, email_address) " +
+                "values ('Eric', 'Roby', 'eric.roby@luv2code_school.com')");
     }
 
     @Test
@@ -111,6 +111,7 @@ public class GradebookControllerTest {
     @AfterEach
     public void setupAfterTransaction() {
         jdbc.execute("DELETE FROM student");
+        jdbc.execute("ALTER TABLE student ALTER COLUMN ID RESTART WITH 1");
     }
 
 }
