@@ -1,6 +1,6 @@
 package com.luv2code.springmvc.models;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "math_grade")
