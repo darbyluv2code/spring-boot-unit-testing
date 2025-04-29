@@ -55,6 +55,8 @@ Based on the docs for [Assertions.assertLinesMatch()](https://junit.org/junit5/d
 
 Let's look at some coding examples. This will help with the discussion.
 
+----
+
 For testing the **case of: 1**. check if `expected.equals(actual)` – if yes, continue with next pair
 
 ```
@@ -70,6 +72,7 @@ void testLinesMatchExpectLineEquals() {
 
 The above test is the simplest example. It attempts to check if each line is equal. In this case, this is true hence the test passes.
 
+----
 
 For testing the **case of: 2**. otherwise, treat expected as a regular expression
 Essentially here, we will attempt using a regular expression
