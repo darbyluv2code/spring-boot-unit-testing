@@ -33,7 +33,6 @@ Yes. The method signature specifies `List<String>`. Here's a info from the JavaD
 ```
 public static void assertLinesMatch(List<String> expectedLines,
  List<String> actualLines)
-
 ```
 
 However, note that you can read in the test data from a file and store the lines in a List<String>. Code examples [available here](https://www.tabnine.com/code/java/methods/java.nio.file.Files/readAllLines).
