@@ -26,7 +26,7 @@ https://www.7-zip.org/download.html
 
  Good questions!
 
-> 1. Does it have to be `List<String>` in order to use `assertLinesMatch()`?
+> _1. Does it have to be `List<String>` in order to use `assertLinesMatch()`?_
 
 Yes. The method signature specifies `List<String>`. Here's a info from the JavaDoc for [Assertions.assertLinesMatch()](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertLinesMatch(java.util.List,java.util.List))
 
@@ -39,7 +39,7 @@ public static void assertLinesMatch(List<String> expectedLines,
 However, note that you can read in the test data from a file and store the lines in a List<String>. Code examples [available here](https://www.tabnine.com/code/java/methods/java.nio.file.Files/readAllLines).
 
 
-> 2. Does assertLinesMatch() convert List<String> into string ("Java11Junit " and "Java\\d+Junit") and compare each character?
+> _2. Does assertLinesMatch() convert List<String> into string ("Java11Junit " and "Java\\d+Junit") and compare each character?_
 
 Based on the docs for [Assertions.assertLinesMatch()](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertLinesMatch(java.util.List,java.util.List)), this is the algorithm for assertLinesMatch
 
@@ -104,7 +104,7 @@ void testLinesMatchRegularExpressionMatchNumbers2Through7() {
 The above test uses the regular expression `[2-7]+`. This will match on numbers in the range of 2 through 7. In this case, this matches on number 5 hence the test passes.
 
 
-> 3. I understand because expected line is treated as a regular expression so below code does not fail but I couldn't got what fast-forward marker means.
+> _3. I understand because expected line is treated as a regular expression so below code does not fail but I couldn't got what fast-forward marker means._
 
 Based on the docs, a fast-forward marker means.
 
@@ -235,5 +235,3 @@ public class LinesTest {
 ---
 
 Also note that when using `assertLinesMatch`, you can also pass in [`Stream<String>`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertLinesMatch(java.util.stream.Stream,java.util.stream.Stream)) parameters. This provides another option for reading data from files. Code examples [available here](https://www.tabnine.com/code/java/methods/java.nio.file.Files/lines).
-
-
