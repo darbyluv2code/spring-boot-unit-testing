@@ -5,8 +5,8 @@
 &#8287;
 ## Frequently Asked Questions
 
-* [Q: spring-boot-unit-testing-code.zip file is invalid](q:-spring-boot-unit-testing-code.zip-file-is-invalid)
-* Q: difference between assertIterableEquals and assertLinesMatch
+* [Q: spring-boot-unit-testing-code.zip file is invalid](#q-spring-boot-unit-testing-codezip-file-is-invalid)
+* [Q: difference between assertIterableEquals and assertLinesMatch](#q-difference-between-assertiterableequals-and-assertlinesmatch)
 
 ## Q: spring-boot-unit-testing-code.zip file is invalid
 
