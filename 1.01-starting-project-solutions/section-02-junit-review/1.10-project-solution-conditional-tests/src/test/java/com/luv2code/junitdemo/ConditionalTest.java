@@ -38,25 +38,25 @@ class ConditionalTest {
     }
 
     @Test
-    @EnabledOnJre(JRE.JAVA_17)
+    @EnabledOnJre(JRE.JAVA_25)
     void testForOnlyForJava17() {
         // execute method and perform asserts
     }
 
     @Test
-    @EnabledOnJre(JRE.JAVA_13)
+    @EnabledOnJre(JRE.JAVA_22)
     void testOnlyForJava13() {
         // execute method and perform asserts
     }
 
     @Test
-    @EnabledForJreRange(min=JRE.JAVA_13, max=JRE.JAVA_18)
+    @EnabledForJreRange(min=JRE.JAVA_22, max=JRE.JAVA_24)
     void testOnlyForJavaRange() {
         // execute method and perform asserts
     }
 
     @Test
-    @EnabledForJreRange(min=JRE.JAVA_11)
+    @EnabledForJreRange(min=JRE.JAVA_21)
     void testOnlyForJavaRangeMin() {
         // execute method and perform asserts
     }
