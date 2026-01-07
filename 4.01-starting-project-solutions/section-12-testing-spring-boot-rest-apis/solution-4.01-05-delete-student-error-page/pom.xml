@@ -15,7 +15,7 @@
 	<version>1.0.0</version>
 
 	<properties>
-		<java.version>23</java.version>
+		<java.version>25</java.version>
 		<argLine></argLine>
 	</properties>
 

@@ -16,7 +16,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<java.version>23</java.version>
+		<java.version>25</java.version>
 		<argLine></argLine>
 	</properties>
 
